@@ -18,7 +18,7 @@ import java.util.Random;
 public class BaseTest {
     WebDriver driver;
 
-    protected String BASE_URL = "https://jere237.softr.app/";
+    protected String BASE_URL = "https://erich416.softr.app";
 
 //    @BeforeEach
     @Before
