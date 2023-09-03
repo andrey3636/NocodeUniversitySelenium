@@ -39,6 +39,7 @@ public class LoginPage extends BasePage {
     // Аннотация FindBy, которая ищет елемент Веб-страницы по значению атрибута class
     // (А именно - "login-error")
     @FindBy(className = "login-error")
+    // Элемент вывода ошибок
     private WebElement LoginErrorDiv;
 
     @Getter
