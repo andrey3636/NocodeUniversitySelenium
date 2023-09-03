@@ -3,27 +3,35 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class LandingPage extends BasePage {
 
+// Класс тестирования Целевой страницы
+public class LandingPage extends BasePage {
     @Getter
+    // Аннотация FindBy, которая ищет елемент Веб-страницы по заданому xpath
+    // (А именно - по тексту внутри елемента-ссылки независимо от регистра)
     @FindBy(xpath = "//a[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'sign up')]")
-//    @FindBy(partialLinkText = "Sign up")
+    // Кнопка-ссылка "sign up"
     private WebElement SignUpButton;
 
-    @Getter
+    @Getterr
+    // Аннотация FindBy, которая ищет елемент Веб-страницы по заданому xpath
+    // (А именно - по тексту внутри елемента-ссылки независимо от регистра)
     @FindBy(xpath = "//a[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'sign in')]")
-//    @FindBy(partialLinkText = "Sign in")
+    // Кнопка-ссылка "sign in"
     private WebElement SignInButton;
 
+    // Метод создания обьекта класса 
     public LandingPage(WebDriver driver) {
+        // Передача аргументов конструктору унаследованного класса BasePage
         super(driver);
-//        driver.get(BASE_URL);
     }
 
+    // Метод нажимания на кнопку "sign up"
     public void clickOnSignUpButton(){
         clickOnTheElement(SignUpButton);
     }
 
+    // Метод нажимания на кнопку "sign in"
     public void clickOnSignInButton(){
         clickOnTheElement(SignInButton);
     }
