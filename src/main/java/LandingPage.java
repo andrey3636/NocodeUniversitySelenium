@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 
-// Класс тестирования Целевой страницы
+// Класс тестирования целевой страницы
 public class LandingPage extends BasePage {
     @Getter
     // Аннотация FindBy, которая ищет елемент Веб-страницы по заданому xpath
