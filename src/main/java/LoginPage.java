@@ -23,7 +23,7 @@ public class LoginPage extends BasePage {
 
     @Getter
     // Аннотация FindBy, которая ищет елемент Веб-страницы по значению атрибута class
-    // (А именно - "password")
+    // (А именно - "show-password")
     @FindBy(className = "show-password")
     // Иконка-глаз, для отображения пароля
     private WebElement PasswordEye;
