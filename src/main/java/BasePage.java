@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 
-
+// Базовый класс для тестирования
 public class BasePage {
     // driver - Поле для обьекта класса WebDriver, который контролирует браузер
     protected WebDriver driver;
